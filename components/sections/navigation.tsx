@@ -12,6 +12,7 @@ const navLinks = [
   { href: '#work', label: 'Work' },
   { href: '#arieli', label: 'Arieli Foundation' },
   { href: '#advisory', label: 'Advisory' },
+  { href: '#publications', label: 'Publications' },
   { href: '#media', label: 'Media' },
   { href: '#contact', label: 'Contact' },
 ]

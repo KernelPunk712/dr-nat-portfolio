@@ -7,6 +7,7 @@ import { About } from '@/components/sections/about'
 import { WorkImpact } from '@/components/sections/work-impact'
 import { ArieliFoundation } from '@/components/sections/arieli-foundation'
 import { Advisory } from '@/components/sections/advisory'
+import { Publications } from '@/components/sections/publications'
 import { MediaPress } from '@/components/sections/media-press'
 import { Contact } from '@/components/sections/contact'
 import { Footer } from '@/components/sections/footer'
@@ -24,6 +25,7 @@ export default function HomePage() {
         <WorkImpact />
         <ArieliFoundation />
         <Advisory />
+        <Publications />
         <MediaPress />
         <Contact />
       </main>

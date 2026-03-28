@@ -7,18 +7,28 @@ import { Icons } from '@/components/icons'
 const mediaFeatures = [
   {
     publication: 'ThisDay',
-    title: 'Natasha Oyibo Leads Arieli Foundation\'s Global Advocacy at UN\'s CSW70',
-    url: 'https://www.thisdaylive.com/2026/03/24/natasha-oyibo-leads-arieli-foundations-global-advocacy-at-uns-csw70/',
+    title: 'Arieli Foundation Expands Global Reach to Transform Maternal Child Health',
+    url: 'https://www.thisdaylive.com/2025/04/04/arieli-foundation-expands-global-reach-to-transform-maternal-child-health/',
   },
   {
     publication: 'Vanguard',
-    title: 'Natasha Oyibo Leads Arieli Foundation\'s Global Advocacy at UN\'s CSW70',
-    url: 'https://www.vanguardngr.com/2026/03/natasha-oyibo-leads-arieli-foundations-global-advocacy-at-uns-csw70/',
+    title: 'Arieli Foundation Expands to Three Northern States to Tackle Maternal and Child Healthcare',
+    url: 'https://www.vanguardngr.com/2025/04/arieli-foundation-expands-to-three-northern-states-to-tackle-maternal-and-child-healthcare/amp/',
   },
   {
-    publication: 'The Sun',
-    title: 'Natasha Oyibo Takes Arieli Foundation\'s Advocacy to UN CSW70',
-    url: 'https://thesun.ng/natasha-oyibo-takes-arieli-foundations-advocacy-to-un-csw70/',
+    publication: 'The Nation',
+    title: 'Oyibo Leads Arieli Foundation\'s Advocacy at UN Women\'s Summit',
+    url: 'https://thenationonlineng.net/oyibo-leads-arieli-foundations-advocacy-at-un-womens-summit/',
+  },
+  {
+    publication: 'Independent',
+    title: 'Natasha Oyibo Leads Arieli Foundation\'s Global Advocacy at UN\'s CSW70',
+    url: 'https://independent.ng/natasha-oyibo-leads-arieli-foundations-global-advocacy-at-uns-csw70/',
+  },
+  {
+    publication: 'Radio Nigeria',
+    title: 'Arieli Foundation Moves to Improve Child Maternal Health Care',
+    url: 'https://radionigeriaabuja.gov.ng/arieli-foundation-moves-to-improve-child-maternal-health-care/',
   },
   {
     publication: 'LinkedIn',
@@ -56,7 +66,7 @@ export function MediaPress() {
               >
                 {/* Glow Effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 {/* Animated Border */}
                 <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute inset-0 rounded-2xl" style={{

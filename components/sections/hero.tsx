@@ -66,7 +66,7 @@ export function Hero() {
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/30 dark:from-slate-black dark:via-rich-navy/50 dark:to-slate-black" />
-      
+
       {/* Animated Gradient Orbs - contained within viewport */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
         <motion.div
@@ -119,14 +119,14 @@ export function Hero() {
             </motion.div>
 
             <motion.div variants={heroItemVariants}>
-              <p className="mt-4 text-lg sm:text-xl text-accent font-medium tracking-wide">
-                Public Health Specialist | Risk Management Expert | Development Practitioner
+              <p className="mt-4 text-base sm:text-lg lg:text-xl text-accent font-medium tracking-wide">
+                Public Health Specialist | Risk Management Expert | Development Practitioner | AI enabled Maternal and Child Health Solutions Expert
               </p>
             </motion.div>
 
             <motion.div variants={heroItemVariants}>
               <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 text-pretty">
-                Strengthening health systems and reducing maternal risk through policy, governance, and execution across Africa and Europe.
+                Advancing maternal and child health by strengthening systems, reducing risk, and driving policy, governance, and execution across Africa and Europe.
               </p>
             </motion.div>
 
@@ -175,7 +175,7 @@ export function Hero() {
                 transition={{ duration: 25, repeat: Infinity, ease: 'linear', opacity: { duration: 1, delay: 0.7 }, scale: { duration: 1, delay: 0.7 } }}
                 className="absolute -inset-8 rounded-full border border-dashed border-accent/20"
               />
-              
+
               {/* Clean image container - transparent background for clean PNG edges */}
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <Image

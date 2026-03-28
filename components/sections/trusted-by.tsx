@@ -4,7 +4,7 @@ import { FadeIn } from '@/components/motion'
 import { motion } from 'framer-motion'
 
 const institutions = [
-  { name: 'Federal Inland Revenue Service', abbrev: 'FIRS' },
+  { name: 'Nigeria Revenue Service', abbrev: 'NRS' },
   { name: 'World Health Organization', abbrev: 'WHO' },
   { name: 'NHS', abbrev: 'NHS' },
   { name: 'Arieli Foundation', abbrev: 'Arieli' },
