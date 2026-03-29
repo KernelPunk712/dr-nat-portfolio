@@ -6,9 +6,10 @@ import { Icons } from '@/components/icons'
 
 const publications = [
   {
-    journal: 'Global Health Action',
-    title: 'The political economy of priority-setting for health in South Sudan: a case study of the health pooled fund',
-    url: 'https://www.tandfonline.com/doi/full/10.1080/17441692.2016.1211165',
+    journal: 'Global Public Health',
+    title:
+      'Evaluating lay perceptions of maternal morality to improve risk communication: a case study in Rivers State, Nigeria',
+    url: 'https://www.tandfonline.com/doi/abs/10.1080/17441692.2016.1211165',
     year: '2016',
     type: 'Peer-Reviewed Journal',
   },
@@ -26,7 +27,8 @@ export function Publications() {
             Publications
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Peer-reviewed research contributions to global health policy and public health systems.
+            Peer-reviewed research contributions to global health policy and
+            public health systems.
           </p>
         </FadeIn>
 

@@ -8,6 +8,10 @@ const institutions = [
   { name: 'World Health Organization', abbrev: 'WHO' },
   { name: 'NHS', abbrev: 'NHS' },
   { name: 'Arieli Foundation', abbrev: 'Arieli' },
+  {
+    name: `Federal Ministry of Women's Affairs and Social Welfare `,
+    abbrev: `FMWASW`,
+  },
 ]
 
 export function TrustedBy() {
@@ -20,7 +24,7 @@ export function TrustedBy() {
           </p>
         </FadeIn>
 
-        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 lg:gap-16">
+        <div className="flex flex-col items-center gap-6 sm:gap-8">
           {institutions.map((institution, index) => (
             <FadeIn key={institution.name} delay={index * 0.1}>
               <motion.div

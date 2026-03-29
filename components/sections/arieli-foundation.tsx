@@ -7,11 +7,13 @@ import { Icons } from '@/components/icons'
 const initiatives = [
   {
     title: 'Arieli Ambassador Emergency Referral Initiative (AAERI)',
-    description: 'Structured emergency response system connecting communities to timely maternal care',
+    description:
+      'Structured emergency response system connecting communities to timely maternal care',
   },
   {
     title: 'Community Outreach Programs',
-    description: 'Health education, screenings, and support services for women and adolescents',
+    description:
+      'Health education, screenings, and support services for women and adolescents',
   },
 ]
 
@@ -29,13 +31,19 @@ const approaches = [
 
 export function ArieliFoundation() {
   return (
-    <section id="arieli" className="py-20 sm:py-28 bg-gradient-to-br from-secondary via-secondary/95 to-slate-black text-secondary-foreground relative overflow-hidden">
+    <section
+      id="arieli"
+      className="py-20 sm:py-28 bg-gradient-to-br from-secondary via-secondary/95 to-slate-black text-secondary-foreground relative overflow-hidden"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0)`,
-          backgroundSize: '40px 40px',
-        }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0)`,
+            backgroundSize: '40px 40px',
+          }}
+        />
       </div>
 
       {/* Decorative Glow - contained */}
@@ -48,11 +56,14 @@ export function ArieliFoundation() {
             Foundation
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 text-balance">
-            The Arieli Foundation for{' '}
+            Arieli Foundation for{' '}
             <span className="text-accent">Maternal and Child Health</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto text-pretty">
-            A non-profit focused on reducing maternal and child mortality in underserved communities in Nigeria. Founded by Dr. Natasha Oyibo, the Foundation addresses systemic gaps in access, emergency response, and community-level support.
+            A non-profit focused on reducing maternal and child mortality in
+            underserved communities in Nigeria. Founded by Dr. Natasha Oyibo,
+            the Foundation addresses systemic gaps in access, emergency
+            response, and community-level support.
           </p>
         </FadeIn>
 
@@ -127,7 +138,9 @@ export function ArieliFoundation() {
                     className="flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300"
                   >
                     <IconComponent className="w-5 h-5 text-primary" />
-                    <span className="text-white font-medium">{approach.label}</span>
+                    <span className="text-white font-medium">
+                      {approach.label}
+                    </span>
                   </motion.div>
                 </StaggerItem>
               )
