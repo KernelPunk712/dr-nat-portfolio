@@ -64,7 +64,7 @@ export function Footer() {
                 Dr. Natasha Oyibo
               </a>
               <p className="text-gray-400 leading-relaxed text-pretty">
-                Public Health Specialist | Risk Management Expert | Development Practitioner
+                Public Health Specialist | Risk Management Expert | Development Practitioner | AI enabled Maternal and Child Health Solutions Expert
               </p>
             </div>
 

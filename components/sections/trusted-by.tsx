@@ -12,6 +12,15 @@ const institutions = [
     name: `Federal Ministry of Women's Affairs and Social Welfare `,
     abbrev: `FMWASW`,
   },
+  {
+    name: ` Federal Ministry of Women’s Affairs and Social Development`,
+    abbrev: 'FMWASD',
+  },
+  { name: `Federal Ministry of Health and Social Welfare`, abbrev: 'FMHSW' },
+  {
+    name: `Federal Ministry of Humanitarian Affairs and Poverty Alleviation`,
+    abbrev: 'FMHAPA',
+  },
 ]
 
 export function TrustedBy() {

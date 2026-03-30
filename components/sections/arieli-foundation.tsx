@@ -18,7 +18,7 @@ const initiatives = [
 ]
 
 const impactStats = [
-  { label: 'Women and adolescents reached', value: 'Thousands' },
+  { label: 'Women, Newborn and Children', value: 'Thousands' },
   { label: 'Nigerian states covered', value: 'Multiple' },
   { label: 'Emergency response systems', value: 'Strengthened' },
 ]
