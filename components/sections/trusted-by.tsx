@@ -9,10 +9,6 @@ const institutions = [
   { name: 'NHS', abbrev: 'NHS' },
   { name: 'Arieli Foundation', abbrev: 'Arieli' },
   {
-    name: `Federal Ministry of Women's Affairs and Social Welfare `,
-    abbrev: `FMWASW`,
-  },
-  {
     name: ` Federal Ministry of Women’s Affairs and Social Development`,
     abbrev: 'FMWASD',
   },
