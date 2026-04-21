@@ -1,52 +1,47 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
+import { siteConfig, socialLinksArray } from '@/lib/config'
 import './globals.css'
 
-const inter = Inter({
+const personSchema = {
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  name: siteConfig.name,
+  jobTitle: siteConfig.jobTitle,
+  url: siteConfig.url,
+  sameAs: socialLinksArray,
+  image: siteConfig.image,
+  description: siteConfig.description,
+}
+
+const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap',
+  display: 'swap'
 })
 
-const playfair = Playfair_Display({
+const playfair = Playfair_Display({ 
   subsets: ['latin'],
   variable: '--font-playfair',
-  display: 'swap',
+  display: 'swap'
 })
 
 export const metadata: Metadata = {
-  title:
-    'Dr. Natasha Oyibo | Public Health Specialist & Risk Management Expert',
-  description:
-    'Dr. Natasha Oyibo is a Nigerian British public health specialist and risk management expert strengthening health systems and reducing maternal risk through policy, governance, and execution across Africa and Europe.',
-  keywords: [
-    'Dr. Natasha Oyibo',
-    'Public Health',
-    'Risk Management',
-    'Maternal Health',
-    'WHO',
-    'NHS',
-    'Arieli Foundation',
-    'Health Systems',
-    'Nigeria',
-    'Development Practitioner',
-  ],
+  title: 'Dr. Natasha Oyibo | Public Health Specialist & Risk Management Expert',
+  description: 'Dr. Natasha Oyibo is a Nigerian British public health specialist and risk management expert strengthening health systems and reducing maternal risk through policy, governance, and execution across Africa and Europe.',
+  keywords: ['Dr. Natasha Oyibo', 'Public Health', 'Risk Management', 'Maternal Health', 'WHO', 'NHS', 'Arieli Foundation', 'Health Systems', 'Nigeria', 'Development Practitioner'],
   authors: [{ name: 'Dr. Natasha Oyibo' }],
   openGraph: {
-    title:
-      'Dr. Natasha Oyibo | Public Health Specialist & Risk Management Expert',
-    description:
-      'Strengthening health systems and reducing maternal risk through policy, governance, and execution across Africa and Europe.',
+    title: 'Dr. Natasha Oyibo | Public Health Specialist & Risk Management Expert',
+    description: 'Strengthening health systems and reducing maternal risk through policy, governance, and execution across Africa and Europe.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title:
-      'Dr. Natasha Oyibo | Public Health Specialist & Risk Management Expert',
-    description:
-      'Strengthening health systems and reducing maternal risk through policy, governance, and execution across Africa and Europe.',
+    title: 'Dr. Natasha Oyibo | Public Health Specialist & Risk Management Expert',
+    description: 'Strengthening health systems and reducing maternal risk through policy, governance, and execution across Africa and Europe.',
   },
   robots: {
     index: true,
@@ -74,9 +69,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
-      >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      </head>
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
